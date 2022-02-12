@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- meta tags pwa -->
+	<meta name="theme-color" content="#333333"><!-- adapta la barra al celu -->
+	<meta name="MobileOptimized" content="width"><!-- optimizando para el ancho -->
+	<meta name="HandheldFriendly" content="true"><!-- es amigable al usar con la mano -->
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- estilos para poder usar en apple -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><!-- tiene 3 estilos, defaul,black,black-translucent -->
+
+	<!-- ICONS -->
+	<link rel="shortcut icon" href="./number_icon.png" type="image/png">
+	<link rel="apple-touch-icon" href="./number_icon.png" type="image/png"><!-- para apple -->
+	<link rel="apple-touch-startup-image" href="./number_icon.png" type="image/png">
+
+	<!-- MANIFEST -->
+	<link rel="manifest" href="./manifest.js">
+
+	<!-- title -->
+	<title>ReactCDN</title>
+	<!-- scripts -->
+	<script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+	<!-- babel -->
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<!-- estilos -->
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<!-- <h1>Hola mundo desde React</h1> -->
+	<div id="root">
+		
+	</div>
+	<script type="text/babel" src="./components/Contador/index.js"></script>
+	<script type="text/babel" src="./index.js"></script>
+	<script type="text/babel" src="./register.js"></script>
+
+</body>
+</html>
+
+
+<!-- 
+
+	setInterval(()=>{
+				setNumero(numero + 1)
+			},1000)	
+ -->
+
+
+<!-- // console.log(React)
+		//BABEL JSX
+		// console.log(ReactDOM)
+		//React createElement pide 3 elementos, el tipo, argumentos, y el contenido que va a renderizar
+		//React DOM pide 2 el elemento a crear y el id al cual le vamos a pasar
+		// ReactDOM.render(
+		// 	React.createElement( "ol",null,
+		// 		React.createElement('li',null,'UVA',
+		// 			React.createElement('ul',null,React.createElement('li',null,'Blancas')),
+		// 			React.createElement('ul',null,React.createElement('li',null,'Negras')),
+		// 				),
+		// 		React.createElement('li',null,'LIMON') ), 
+		// 	document.getElementById('root')
+		// );
+ -->

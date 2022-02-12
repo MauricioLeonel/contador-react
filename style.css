@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #333;
+	color: rgb(255, 250, 250);
+	text-align: center;
+}
+
+.menor{
+	color: tomato;
+}
+
+.mayor{
+	color: limegreen;
+}
+
+button{
+	margin: 0px .5rem;
+
+} 
